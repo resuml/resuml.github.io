@@ -75,6 +75,19 @@ i.tiny{
 	max-width: 50px;
 }
 
+.duration{
+	margin: 0 5px;
+	color: #848d95;
+}
+
+.duration:before{
+	content: "(";
+}
+
+.duration:after{
+	content: ")";
+}
+
 .tags .tag{
 	display: inline-block;
 	padding: 1px 6px;
