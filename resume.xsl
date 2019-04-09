@@ -129,6 +129,27 @@
     </div>
   </xsl:template>
 
+  <xsl:template match="/resume/publications">
+    <div id="publications" class="row">
+      <div class="section">Publications</div>
+      <div class="col s12">
+        <xsl:for-each select="./publication">
+          <div class="row publication">
+            <div class="col s12">
+              <h2 class="name"><a href="{link}" target="_blank"><xsl:value-of select="title"/></a></h2>
+              <h3>
+                <span class="publisher"><xsl:value-of select="publisher"/></span>
+                -
+                <span class="date"><xsl:value-of select="available"/></span>
+              </h3>
+              <xsl:call-template name="description"/>
+            </div>
+          </div>
+        </xsl:for-each>
+      </div>
+    </div>
+  </xsl:template>
+
   <xsl:template match="/resume/credits">
     <div id="credits" class="row">
       <div class="section"></div>

@@ -277,6 +277,15 @@
 			</contribution>
 		</project>
 	</projects>
+	<publications>
+		<publication>
+			<title>Connecting the public with clinical trial options: The ResearchMatch Trials Today tool</title>
+			<publisher>Journal of Clinical and Translational Science</publisher>
+			<link>https://doi.org/10.1017/cts.2018.327</link>
+			<available>2018-11-25</available>
+			<description>Potential participants seek information about clinical trials for many reasons, but the process can be challenging. We analyzed 101,249 searches in ResearchMatch Trials Today, a free interface to recruiting trials from ClinicalTrials.gov. Searches from March 2015 to November 2016 included a broad range of conditions and healthy volunteer concepts, including 12,649 unique topics. Trials Today data indicate that it is being used to identify trials on a variety of topics.</description>
+		</publication>
+	</publications>
 	<credits>
 		<credit>
 			<title>Find the source</title>
