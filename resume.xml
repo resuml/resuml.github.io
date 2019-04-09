@@ -32,7 +32,7 @@
 			<link>https://victr.vanderbilt.edu</link>
 			<icon>./icons/victr.gif</icon>
 			<tenure>
-				<start>Oct 2016</start>
+				<start>2016-10-01</start>
 			</tenure>
 			<tags>
 				<tag>php</tag>
@@ -59,8 +59,8 @@
 			<link>http://www.dartmouth-hitchcock.org</link>
 			<icon>./icons/dartmouth-hitchcock.jpg</icon>
 			<tenure>
-				<start>Sep 2012</start>
-				<end>Oct 2016</end>
+				<start>2012-09-01</start>
+				<end>2016-10-01</end>
 			</tenure>
 			<tags>
 				<tag>c#</tag>
@@ -98,8 +98,8 @@
 			<link>http://www.dartmouth-hitchcock.org</link>
 			<icon>./icons/dartmouth-hitchcock.jpg</icon>
 			<tenure>
-				<start>Apr 2010</start>
-				<end>Sep 2012</end>
+				<start>2010-04-01</start>
+				<end>2012-09-01</end>
 			</tenure>
 			<tags>
 				<tag>c#</tag>
@@ -218,7 +218,7 @@
 	<projects>
 		<project>
 			<name>Trials Today</name>
-			<date>Aug 2017</date>
+			<date>2017-08-08</date>
 			<link>https://www.trialstoday.org</link>
 			<icon>./icons/trials-today.png</icon>
 			<tags>
@@ -235,7 +235,7 @@
 		</project>
 		<project>
 			<name>myD-H | Dartmouth-Hitchcock Electronic Health Record</name>
-			<date>Apr 2011</date>
+			<date>2011-04-02</date>
 			<link>https://www.mydh.org</link>
 			<icon>./icons/mydh.png</icon>
 			<tags>
@@ -257,7 +257,7 @@
 		</project>
 		<project>
 			<name>mEYEtrak</name>
-			<date>May 2009</date>
+			<date>2009-04-27</date>
 			<link>http://meyetrak.com</link>
 			<icon>./icons/meyetrak.png</icon>
 			<tags>
