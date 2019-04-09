@@ -46,7 +46,10 @@
 			</description>
 			<details>
 				<detail>
-					Expanded TrialsToday.org, an application to facilitate the discovery of clinical trials by volunteers, to be multi-tenant and provide results localized to those themes based on institutional rules.
+					Lead developer on TrialsToday.org, an application to facilitate the discovery of clinical trials by volunteers. Enhanced application to be multi-tenant and provide results localized to those tenants based on institutional rules.
+				</detail>
+				<detail>
+					Repurposed TrialsToday.org data to build the Competing Trials Tool which allows VICTR to offer a rapid service to help investigators discover clinical trials which may be competing for volunteers in their area.
 				</detail>
 				<detail>
 					Developed message queuing and logging bundle to handle templating and batch sending of emails, as well as recovery in the event of gateway failure.
