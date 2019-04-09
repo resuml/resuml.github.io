@@ -23,7 +23,7 @@ h1{
 	padding: 0;
 
 	color: #242729;
-	font-size: 25px;
+	font-size: 2rem;
 	font-weight: 400;
 }
 
@@ -31,8 +31,7 @@ h2{
 	margin: 5px 0;
 	padding: 0;
 	
-	/*color: #6a737c;*/
-	font-size: 19px;
+	font-size: 1.25rem;
 	font-weight: 400;
 }
 
@@ -40,7 +39,7 @@ h3{
 	margin: 5px 0;
 	padding: 0;
 	
-	font-size: 15px;
+	font-size: 1rem;
 	font-weight: 400;
 }
 
@@ -49,7 +48,7 @@ p{
 }
 
 i{
-	margin: 0 5px 0 2px;
+	margin: 0 5px 2px 2px;
 	vertical-align: middle;
 	color: #848d95;
 }
@@ -135,15 +134,15 @@ i.tiny{
 }
 
 #demographics h1{
-	font-size: 27px;
+	font-size: 1.8rem;
 }
 
 #demographics h2{
-	font-size: 15px;
+	font-size: 1rem;
 }
 
 #demographics p{
-	font-size: 14px;
+	font-size: 0.95rem;
 }
 
 #demographics a, #demographics a:visited{
@@ -154,10 +153,15 @@ i.tiny{
 	text-decoration: underline;
 }
 
+#demographics #contact{
+	margin-top: 10px;
+}
+
 #demographics a.public-key{
 	margin: 0 5px;
 	color: #cccccc;
-	font-size: 10px;
+	font-size: 0.6rem;
+	font-family: "Courier New", Courier, monospace;
 }
 
 #demographics a.public-key:before{

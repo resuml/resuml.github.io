@@ -2,6 +2,7 @@
 	body{
 		margin: 0;
 		font-size: 10px;
+		line-height: inherit;
   		filter: grayscale(100%);
 		-webkit-filter: grayscale(100%);
 	}
@@ -11,11 +12,21 @@
 	}
 
 	.container>.row>.col{
-		margin: 5%;
-		width: 90%;
+		margin: 0 2%;
+		width: 96%;
+	}
+
+	.row{
+		margin-bottom: 5px;
+	}
+
+	.section{
+		padding: 2px 0;
+		margin-bottom: 5px;
 	}
 
 	.icon img{
+		margin-top: 5px;
 		max-width: 32px;
 	}
 
@@ -25,11 +36,21 @@
 
 	#demographics{
 		margin-bottom: 20px;
+		min-height: 10%;
 	}
 
 	#contact{
 		position: absolute;
 		top: 0; right: 0;
+	}
+
+	#contact p{
+		margin: 0;
+		font-size: 0.75rem;
+	}
+
+	#keywords{
+		margin-bottom: 10px;
 	}
 
 	#credits{
