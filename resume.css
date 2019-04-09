@@ -167,3 +167,24 @@ i.tiny{
 #demographics a.public-key:after{
 	content: ")";
 }
+
+#credits{
+	opacity: 0.25;
+	text-transform: lowercase;
+}
+
+#credits img{
+	height: 20px;
+	margin: 0 3px 3px 2px;
+	vertical-align: middle;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+#credits a, #credits a:visited{
+	color: #000000;
+}
+
+#credits a:hover{
+	text-decoration: underline;
+}

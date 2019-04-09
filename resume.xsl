@@ -8,12 +8,13 @@
         <title><xsl:value-of select="demographics/name"/> | Resume</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-        <link rel="stylesheet" href="resume.css?cb=73"/>
-        <link rel="stylesheet" href="resume-print.css?cb=21"/>
+        <link rel="stylesheet" href="resume.css"/>
+        <link rel="stylesheet" href="resume-print.css"/>
         <link rel="shortcut icon" type="image/png" href="/favicon.png">
           <xsl:attribute name="href">
             <xsl:call-template name="icon-link">
               <xsl:with-param name="source" select="demographics"/>
+              <xsl:with-param name="size" select="'64'"/>
             </xsl:call-template>
           </xsl:attribute>
         </link>
@@ -33,7 +34,7 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="resume.js?cb=1"></script>
+        <script src="resume.js"></script>
       </body>
     </html>
   </xsl:template>
@@ -128,24 +129,46 @@
     </div>
   </xsl:template>
 
+  <xsl:template match="/resume/credits">
+    <div id="credits" class="row">
+      <div class="section"></div>
+      <div class="col s12">
+        <xsl:for-each select="credit">
+          <a href="{link}" target="_blank">
+            <img alt="{title}">
+              <xsl:attribute name="src">
+                <xsl:call-template name="icon-link">
+                  <xsl:with-param name="source" select="."/>
+                  <xsl:with-param name="size" value="'16'"/>
+                </xsl:call-template>
+              </xsl:attribute>
+            </img>
+            <xsl:value-of select="title"/>
+          </a>
+        </xsl:for-each>
+      </div>
+    </div>
+  </xsl:template>
+
   <xsl:template name="icon-link">
     <xsl:param name="source"/>
+    <xsl:param name="size"/>
     <xsl:variable name="icon-link">
       <xsl:choose>
         <xsl:when test="$source/icon"><xsl:value-of select="$source/icon"/></xsl:when>
-        <xsl:otherwise>https://api.faviconkit.com/<xsl:value-of select="substring-after($source/link, '://')"/>/64</xsl:otherwise>
+        <xsl:otherwise>https://api.faviconkit.com/<xsl:value-of select="substring-after($source/link, '://')"/>/<xsl:value-of select="$size"/></xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
-
     <xsl:value-of select="$icon-link"/>
   </xsl:template>
 
   <xsl:template name="icon">
     <a class="icon" href="{link}" target="_blank">
-      <img alt="{employer}">
+      <img alt="{employer|title|name}">
         <xsl:attribute name="src">
           <xsl:call-template name="icon-link">
             <xsl:with-param name="source" select="."/>
+            <xsl:with-param name="size" select="'64'"/>
           </xsl:call-template>
         </xsl:attribute>
       </img>

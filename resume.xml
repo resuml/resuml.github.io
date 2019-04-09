@@ -220,7 +220,6 @@
 			<name>Trials Today</name>
 			<date>2017-08-08</date>
 			<link>https://www.trialstoday.org</link>
-			<icon>./icons/trials-today.png</icon>
 			<tags>
 				<tag>php</tag>
 				<tag>symfony</tag>
@@ -278,4 +277,11 @@
 			</contribution>
 		</project>
 	</projects>
+	<credits>
+		<credit>
+			<title>Find the source</title>
+			<link>https://github.com/arychj/arychj.github.io</link>
+			<icon>https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png</icon>
+		</credit>
+s	</credits>
 </resume>
