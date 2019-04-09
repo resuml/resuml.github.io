@@ -233,6 +233,19 @@
 			</contribution>
 		</project>
 		<project>
+			<name>Legion Web Services Framework</name>
+			<date>2012-01-01</date>
+			<link>https://erikjolson.com/legion-web-services-framework/</link>
+			<icon>https://github.com/Dartmouth-Hitchcock/Legion/blob/master/Legion%20of%20OS/Sites/Centurion/Images/legion.png?raw=true</icon>
+			<tags>
+				<tag>.net</tag>
+				<tag>sql-server</tag>
+			</tags>
+			<description>
+				Legion is a cloud-base framework to allow the rapid development of distinct and compartmentalized web services by abstracting everything to do with the "web" part of web services into the framework, leaving the developer free to focus on actual functionality.
+			</description>
+		</project>
+		<project>
 			<name>myD-H | Dartmouth-Hitchcock Electronic Health Record</name>
 			<date>2011-04-02</date>
 			<link>https://www.mydh.org</link>
