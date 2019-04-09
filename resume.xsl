@@ -31,6 +31,9 @@
             </div>
           </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="resume.js?cb=1"></script>
       </body>
     </html>
   </xsl:template>
@@ -157,7 +160,11 @@
       </xsl:choose>
     </xsl:variable>
 
-    <p class="tenure"><xsl:value-of select="tenure/start"/> → <xsl:value-of select="$end"/></p>
+    <p class="tenure">
+      <span class="date"><xsl:value-of select="tenure/start"/></span> →
+      <span class="date"><xsl:value-of select="$end"/></span>
+      <span class="duration"></span>
+    </p>
   </xsl:template>
 
   <xsl:template name="tags">
