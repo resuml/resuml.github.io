@@ -1,10 +1,16 @@
 @media print {
+	.no-print, .modal, .modal-overlay, #print, #picture, #credits{
+		display: none !important;
+	}
+
 	body{
 		margin: 0;
 		font-size: 10px;
 		line-height: inherit;
   		filter: grayscale(100%);
 		-webkit-filter: grayscale(100%);
+
+		overflow: inherit !important;
 	}
 
 	.container{
@@ -30,10 +36,6 @@
 		max-width: 32px;
 	}
 
-	#print, #picture{
-		display: none;
-	}
-
 	#demographics{
 		margin-bottom: 20px;
 		min-height: 10%;
@@ -51,9 +53,5 @@
 
 	#keywords{
 		margin-bottom: 10px;
-	}
-
-	#credits{
-		display: none;
 	}
 }

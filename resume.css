@@ -57,7 +57,11 @@ i.tiny{
 	font-size: 1.25rem;
 }
 
-.section{
+.hidden{
+	display: none;
+}
+
+.header{
 	padding: 5px 0;
 	margin-bottom: 10px;
 	border-top: 1px solid #d6d9dc;
@@ -116,12 +120,20 @@ i.tiny{
 	top: 10px; right: 10px;
 }
 
-#print i{
+#print i, #modalPrint i{
 	color: inherit;
 }
 
-#print a:hover{
+#print a{
+	color: #FFFFFF;
+}
+
+#print a:hover, #modalPrint a:hover{
 	color: inherit;
+}
+
+#modalPrint{
+	width: 45%;
 }
 
 #demographics{

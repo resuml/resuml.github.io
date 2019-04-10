@@ -21,9 +21,7 @@
       </head>
       <body>
         <div id="print">
-          <a class="waves-effect waves-light btn-small" onclick="window.print();">
-            <i class="material-icons left">print</i> Print
-          </a>
+          <a class="modal-trigger btn-small waves-effect waves-light" href="#modalPrint"><i class="material-icons left">print</i> Print</a>
         </div>
         <div class="container">
           <div class="row">
@@ -32,7 +30,18 @@
             </div>
           </div>
         </div>
+          <div id="modalPrint" class="modal">
+            <div class="modal-content">
+              <h5>Please select the sections you would like to print:</h5>
+              <div id="print-sections" class="row"></div>
+            </div>
+            <div class="modal-footer">
+              <a class="modal-close waves-effect waves-green btn-flat">Close</a>
+              <a class="waves-effect waves-light btn-small" onclick="printSections();"><i class="material-icons left">print</i> Print</a>
+            </div>
+          </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
         <script src="resume.js"></script>
       </body>
@@ -40,7 +49,8 @@
   </xsl:template>
 
   <xsl:template match="/resume/demographics">
-    <div id="demographics" class="row">
+    <div id="demographics" class="row section">
+      <div class="header hidden">Contact Information</div>
       <div class="col s10">
         <h1><xsl:value-of select="name"/></h1>
         <h2><xsl:value-of select="title"/></h2>
@@ -54,9 +64,9 @@
   </xsl:template>
 
   <xsl:template match="/resume/keywords">
-    <div id="keywords" class="row">
+    <div id="keywords" class="row section no-print">
       <xsl:for-each select="./*">
-        <div class="section"><xsl:value-of select="@title"/></div>
+        <div class="header"><xsl:value-of select="@title"/></div>
         <div class="col s12">
           <xsl:call-template name="tags"/>
         </div>
@@ -65,8 +75,8 @@
   </xsl:template>
 
   <xsl:template match="/resume/roles">
-    <div id="roles" class="row">
-      <div class="section">Experience</div>
+    <div id="roles" class="row section">
+      <div class="header">Experience</div>
       <div class="col s12">
         <xsl:for-each select="role">
           <div class="row role">
@@ -87,8 +97,8 @@
   </xsl:template>
 
   <xsl:template match="/resume/education">
-    <div id="education" class="row">
-      <div class="section">Education</div>
+    <div id="education" class="row section">
+      <div class="header">Education</div>
       <div class="col s12">
         <xsl:for-each select="./degree">
           <div class="row degree">
@@ -109,8 +119,8 @@
   </xsl:template>
 
   <xsl:template match="/resume/projects">
-    <div id="projects" class="row">
-      <div class="section">Projects</div>
+    <div id="projects" class="row section no-print">
+      <div class="header">Projects</div>
       <div class="col s12">
         <xsl:for-each select="./project">
           <div class="row project">
@@ -130,8 +140,8 @@
   </xsl:template>
 
   <xsl:template match="/resume/publications">
-    <div id="publications" class="row">
-      <div class="section">Publications</div>
+    <div id="publications" class="row section no-print">
+      <div class="header">Publications</div>
       <div class="col s12">
         <xsl:for-each select="./publication">
           <div class="row publication">
@@ -152,7 +162,7 @@
 
   <xsl:template match="/resume/credits">
     <div id="credits" class="row">
-      <div class="section"></div>
+      <div class="header"></div>
       <div class="col s12">
         <xsl:for-each select="credit">
           <a href="{link}" target="_blank">

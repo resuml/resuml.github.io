@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  calculateTenures();
+  beautifyDates();
+  setupPrintSections();
+});
+
+function calculateTenures(){
   $('.tenure').each(function(index, value) {
     let start = undefined;
     let end = undefined;
@@ -34,11 +44,50 @@ $(document).ready(function(){
 
     $(this).find('.duration').html(s);
   });
+}
 
+function beautifyDates(){
   $('.date').html(function(index, value) {
     let input = (value.length == 4 ? 'YYYY' : null);
     let output = (value.length == 4 ? 'YYYY' : 'MMM YYYY');
 
     return (value == 'Current' ? value : moment(value, input).format(output));
   });
-});
+}
+
+function setupPrintSections(){
+  let sections = $('#print-sections');
+  $(sections).empty();
+
+  let col = null;
+  $('.section').each(function(i, e){
+    if(i % 3 == 0){
+      col = $('<div/>').addClass('col s4');
+      $(sections).append(col);
+    }
+
+    let checkbox = $('<input/>').attr('type', 'checkbox').val($(e).attr('id'));
+    if(!$(e).hasClass('no-print')){
+      $(checkbox).prop('checked', 'checked');
+    }
+
+    $(col).append(
+      $('<label/>')
+        .append(checkbox)
+        .append($('<span/>').html($(e).find('.header').html()))
+    );
+  });
+
+  $(sections).find('label').wrap('<p/>');
+}
+
+function printSections(){
+  $('#modalPrint').modal('close');
+
+  $('.section').addClass('no-print');
+  $('#print-sections input').each(function(){
+    if($(this).is(':checked')){
+      $('#' + $(this).val()).removeClass('no-print');
+    }
+  }).promise().done(function(){window.print();});
+}
