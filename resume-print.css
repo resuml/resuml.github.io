@@ -1,5 +1,5 @@
 @media print {
-	.no-print, .modal, .modal-overlay, #print, #picture, #credits{
+	.no-print, .modal, .modal-overlay, #print, #demographics a.public-key, #picture, #credits{
 		display: none !important;
 	}
 
