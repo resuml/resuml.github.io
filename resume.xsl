@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
   <xsl:output encoding="UTF-8" indent="yes"/>
 
-  <xsl:template match="/resume">
+  <xsl:template match="/">
     <html>
       <head>
         <title><xsl:value-of select="demographics/name"/> | Resume</title>
@@ -170,7 +170,7 @@
               <xsl:attribute name="src">
                 <xsl:call-template name="icon-link">
                   <xsl:with-param name="source" select="."/>
-                  <xsl:with-param name="size" value="'16'"/>
+                  <xsl:with-param name="size" select="'16'"/>
                 </xsl:call-template>
               </xsl:attribute>
             </img>
