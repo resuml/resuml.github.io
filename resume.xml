@@ -60,7 +60,7 @@
 			<employer>Dartmouth-Hitchcock Medical Center</employer>
 			<title>Web Application Systems Programmer/Analyst</title>
 			<link>http://www.dartmouth-hitchcock.org</link>
-			<icon>./icons/dartmouth-hitchcock.jpg</icon>
+			<icon>./icons/dartmouth-hitchcock.png</icon>
 			<tenure>
 				<start>2012-09-01</start>
 				<end>2016-10-01</end>
@@ -99,7 +99,7 @@
 			<employer>Dartmouth-Hitchcock Medical Center</employer>
 			<title>Web Programmer</title>
 			<link>http://www.dartmouth-hitchcock.org</link>
-			<icon>./icons/dartmouth-hitchcock.jpg</icon>
+			<icon>./icons/dartmouth-hitchcock.png</icon>
 			<tenure>
 				<start>2010-04-01</start>
 				<end>2012-09-01</end>
