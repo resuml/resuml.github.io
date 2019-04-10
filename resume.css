@@ -61,6 +61,10 @@ i.tiny{
 	display: none;
 }
 
+.section{
+	padding: 0;
+}
+
 .header{
 	padding: 5px 0;
 	margin-bottom: 10px;
