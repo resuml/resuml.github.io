@@ -54,4 +54,12 @@
 	#keywords{
 		margin-bottom: 10px;
 	}
+
+    #experience .roles .role:not(:last-child):before{
+        display: none;
+    }
+
+    #experience .roles .role .title:before{
+        display: none;
+    }
 }

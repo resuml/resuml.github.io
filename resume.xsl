@@ -74,21 +74,45 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="/resume/roles">
-    <div id="roles" class="row section">
+  <xsl:template match="/resume/experience">
+    <div id="experience" class="row section">
       <div class="header">Experience</div>
       <div class="col s12">
-        <xsl:for-each select="role">
-          <div class="row role">
+        <xsl:for-each select="company">
+          <div class="row company">
             <div class="col s1 center-align">
               <xsl:call-template name="icon"/>
             </div>
             <div class="col s11">
-              <h2><xsl:value-of select="title"/></h2>
-              <h3 class="employer"><a href="{link}" target="_blank"><xsl:value-of select="employer"/></a></h3>
-              <xsl:call-template name="tenure"/>
-              <xsl:call-template name="tags"/>
-              <xsl:call-template name="description"/>
+              <xsl:choose>
+                <xsl:when test="count(role) > 1">
+                  <h2 class="name"><a href="{link}" target="_blank"><xsl:value-of select="name"/></a></h2>
+                  <xsl:call-template name="tenure">
+                    <xsl:with-param name="type" select="'duration'"/>
+                  </xsl:call-template>
+                  <div class="roles">
+                    <xsl:for-each select="role">
+                      <div class="role">
+                        <h3 class="title"><xsl:value-of select="title"/></h3>
+                        <xsl:call-template name="tenure">
+                          <xsl:with-param name="type" select="'dates'"/>
+                        </xsl:call-template>
+                        <xsl:call-template name="tags"/>
+                        <xsl:call-template name="description"/>
+                      </div>
+                    </xsl:for-each>
+                  </div>
+                </xsl:when>
+                <xsl:otherwise>
+                  <role>
+                    <h2><xsl:value-of select="role/title"/></h2>
+                    <h3 class="name"><a href="{link}" target="_blank"><xsl:value-of select="name"/></a></h3>
+                    <xsl:call-template name="tenure"/>
+                    <xsl:call-template name="tags"/>
+                    <xsl:call-template name="description"/>
+                  </role>
+                </xsl:otherwise>
+              </xsl:choose>
             </div>
           </div>
         </xsl:for-each>
@@ -207,22 +231,40 @@
   </xsl:template>
 
   <xsl:template name="tenure">
+    <xsl:param name="type" select="'full'"/>
     <xsl:variable name="end">
       <xsl:choose>
-        <xsl:when test="tenure/end"><xsl:value-of select="tenure/end"/></xsl:when>
+        <xsl:when test=".//tenure/end"><xsl:value-of select="(.//tenure/end)[1]"/></xsl:when>
         <xsl:otherwise>Current</xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
 
-    <p class="tenure">
-      <span class="date"><xsl:value-of select="tenure/start"/></span> →
-      <span class="date"><xsl:value-of select="$end"/></span>
-      <span class="duration"></span>
-    </p>
+    <xsl:choose>
+      <xsl:when test="$type = 'duration'">
+        <p class="tenure short">
+          <span class="date start"><xsl:value-of select="(.//tenure/start)[last()]"/></span>
+          <span class="date end"><xsl:value-of select="$end"/></span>
+          <span class="duration"></span>
+        </p>
+      </xsl:when>
+      <xsl:when test="$type = 'dates'">
+        <p class="tenure">
+          <span class="date start"><xsl:value-of select="(.//tenure/start)[last()]"/></span>
+          <span class="date end"><xsl:value-of select="$end"/></span>
+        </p>
+      </xsl:when>
+      <xsl:otherwise>
+        <p class="tenure">
+          <span class="date start"><xsl:value-of select="(.//tenure/start)[last()]"/></span>
+          <span class="date end"><xsl:value-of select="$end"/></span>
+          <span class="duration"></span>
+        </p>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="tags">
-    <xsl:variable name="tags" select="(tags|.)"/>
+    <xsl:variable name="tags" select="(.//tags|.)"/>
 
     <div class="tags">
       <xsl:for-each select="$tags/tag">
@@ -232,9 +274,9 @@
   </xsl:template>
 
   <xsl:template name="description">
-    <p class="description"><xsl:value-of select="description"/></p>
+    <p class="description"><xsl:value-of select=".//description"/></p>
     <ul class="details">
-      <xsl:for-each select="details/detail">
+      <xsl:for-each select=".//details/detail">
         <li><xsl:value-of select="."/></li>
       </xsl:for-each>
     </ul>

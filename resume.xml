@@ -2,199 +2,239 @@
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 <resume>
 	<demographics>
-		<name>Erik J. Olson</name>
-		<title>Applications Developer at VICTR</title>
-		<address>Brentwood, TN, United States</address>
-		<link>https://erikjolson.com</link>
-		<icon>./icons/ejo.png</icon>
-		<email>hello@erikjolson.com</email>
+		<name>Anon Nemo</name>
+		<title>Experience Presentation Engineer</title>
+		<address>Potwin, KS, United States</address>
+		<link>https://resuml.com</link>
+		<icon>./icons/resumlx.png</icon>
+		<email>anon.nemo@example.com</email>
 		<crypto>
-			<fingerprint>0B8A 3CC1 0996 BFC2</fingerprint>
-			<key>https://erikjolson.com/contact/pgp-public-key/</key>
+			<fingerprint>1A2B 3000 132E 01D0</fingerprint>
+			<key>https://en.wikipedia.org/wiki/GNU_Privacy_Guard</key>
 		</crypto>
-		<picture>./icons/profile.jpg</picture>
+		<picture>https://thispersondoesnotexist.com/image</picture>
 	</demographics>
 	<keywords>
 		<technologies title="Technologies">
-			<tag>c#</tag>
-			<tag>.net</tag>
-			<tag>sql</tag>
-			<tag>php</tag>
-			<tag>symfony</tag>
+            <tag>xml</tag>
+            <tag>xsl</tag>
+			<tag>css</tag>
 			<tag>jquery</tag>
-			<tag>regex</tag>
+            <tag>moment.js</tag>
+            <tag>materialize</tag>
 		</technologies>
 	</keywords>
-	<roles>
-		<role>
-			<employer>Vanderbilt Institute for Clinical and Translational Research</employer>
-			<title>Applications Developer</title>
-			<link>https://victr.vanderbilt.edu</link>
-			<icon>./icons/victr.gif</icon>
-			<tenure>
-				<start>2016-10-01</start>
-			</tenure>
-			<tags>
-				<tag>php</tag>
-				<tag>symfony</tag>
-				<tag>mysql</tag>
-				<tag>elasticsearch</tag>
-				<tag>javascript</tag>
-			</tags>
-			<description>
-				Design and develop applications in support of the Vanderbilt Institute for Clinical and Translational Research. Our goal is to transform the way ideas and research discoveries make their way from origin to patient care by simplifying process and making it easier for researchers and patients to focus on what is important.
-			</description>
-			<details>
-				<detail>
-					Lead developer on TrialsToday.org, an application to facilitate the discovery of clinical trials by volunteers. Enhanced application to be multi-tenant and provide results localized to those tenants based on institutional rules.
-				</detail>
-				<detail>
-					Repurposed TrialsToday.org data to build the Competing Trials Tool which allows VICTR to offer a rapid service to help investigators discover clinical trials which may be competing for volunteers in their area.
-				</detail>
-				<detail>
-					Developed message queuing and logging bundle to handle templating and batch sending of emails, as well as recovery in the event of gateway failure.
-				</detail>
-			</details>
-		</role>
-		<role>
-			<employer>Dartmouth-Hitchcock Medical Center</employer>
-			<title>Web Application Systems Programmer/Analyst</title>
-			<link>http://www.dartmouth-hitchcock.org</link>
+    <experience>
+        <company>
+			<name>Resume Markup Language</name>
+			<link>https://github.com/resuml/resuml.github.io</link>
+			<icon>./icons/resuml.svg</icon>
+            <role>
+                <title>Sr. Principle Imagineer</title>
+                <tenure>
+                    <start>2019-04-10</start>
+                </tenure>
+                <tags>
+                    <tag>xml</tag>
+                    <tag>xsl</tag>
+                    <tag>css</tag>
+                    <tag>jquery</tag>
+                    <tag>moment.js</tag>
+                    <tag>materialize</tag>
+                </tags>
+                <description>
+                    Design and develop applications in support of the Vanderbilt Institute for Clinical and Translational Research. Our goal is to transform the way ideas and research discoveries make their way from origin to patient care by simplifying process and making it easier for researchers and patients to focus on what is important.
+                </description>
+                <details>
+                    <detail>
+                        Lead developer on TrialsToday.org, an application to facilitate the discovery of clinical trials by volunteers. Enhanced application to be multi-tenant and provide results localized to those tenants based on institutional rules.
+                    </detail>
+                    <detail>
+                        Repurposed TrialsToday.org data to build the Competing Trials Tool which allows VICTR to offer a rapid service to help investigators discover clinical trials which may be competing for volunteers in their area.
+                    </detail>
+                    <detail>
+                        Developed message queuing and logging bundle to handle templating and batch sending of emails, as well as recovery in the event of gateway failure.
+                    </detail>
+                </details>
+            </role>
+        </company>
+        <company>
+			<name>Omni Consumer Products</name>
+			<link>https://example.com</link>
 			<icon>./icons/dartmouth-hitchcock.png</icon>
-			<tenure>
-				<start>2012-09-01</start>
-				<end>2016-10-01</end>
-			</tenure>
-			<tags>
-				<tag>c#</tag>
-				<tag>sql-server</tag>
-				<tag>php</tag>
-				<tag>xml</tag>
-				<tag>jquery</tag>
-				<tag>tfs</tag>
-				<tag>git</tag>
-				<tag>ge-healthcare-systems</tag>
-				<tag>epic-healthcare-systems</tag>
-				<tag>mumps</tag>
-			</tags>
-			<description>
-				Develop, implement, upgrade and enhance new and existing web based systems at all levels of the stack (including front-end JS/HTML/CSS, server-side .NET/PHP, and database schema and proc development) and maintain the web infrastructure for Dartmouth-Hitchcock, an academic medical center. Interact with customers to understand scope and develop requirements. Serve as a mentor and technical resource for junior engineers in understanding and problem solving.
-			</description>
-			<details>
-				<detail>
-					Lead engineer on Legion, a C#-based homegrown Web Services API Rapid-Development Framework, which powers the new web infrastructure at Dartmouth-Hitchcock. Created various services leveraging this framework to support the development of mission-critical applications. Also developed services to provide centralized integration for applications to third party systems and APIs including: Twilio, AtTask, CECity, and Exchange.
-				</detail>
-				<detail>
-					Co-lead engineer on myD-H v3.0, a patient portal application. Version 3.0 involved redesigning the application to move away from a monolithic design style to a microservices style. Primary responsibilities included architectural design of core libraries and web services integration, as well as the design and implementation of several new supporting services such as messaging and SSO.
-				</detail>
-				<detail>
-					Designed and implemented a Windows services management platform to allow rapid development, centralized management, and deployment of services across the entire web infrastructure.
-				</detail>
-				<detail>
-					Designed and implemented a web application to replace paper emergency equipment inventory system which has subsequently increased Dartmouth-Hitchcock's JCAHO compliance from &lt;50% to 99.9%.
-				</detail>
-			</details>
-		</role>
-		<role>
-			<employer>Dartmouth-Hitchcock Medical Center</employer>
-			<title>Web Programmer</title>
-			<link>http://www.dartmouth-hitchcock.org</link>
-			<icon>./icons/dartmouth-hitchcock.png</icon>
-			<tenure>
-				<start>2010-04-01</start>
-				<end>2012-09-01</end>
-			</tenure>
-			<tags>
-				<tag>c#</tag>
-				<tag>jquery</tag>
-				<tag>iis</tag>
-				<tag>sql-server</tag>
-				<tag>xml</tag>
-				<tag>mumps</tag>
-				<tag>ge-healthcare-systems</tag>
-			</tags>
-			<description>
-				Develop, implement, upgrade and enhance new and existing web based systems at all levels of the stack (including front-end JS/HTML/CSS, server-side .NET/PHP, and database schema and proc development) and maintain the web infrastructure for Dartmouth-Hitchcock, an academic medical center.
-			</description>
-			<details>
-				<detail>
-					Designed and developed myD-H, an online patient portal, to support the organizational transition from GE's Patient Online to Epic's MyChart. Along with two other team members, wrote functionality to convert three disparate legacy user bases on-the-fly into a single SSO layer integrating the five new systems comprising myD-H.
-				</detail>
-				<detail>
-					Designed and developed shared logging service to centrally collect events and exceptions from homegrown applications.
-				</detail>
-				<detail>
-					Migrated Employee Report of Injury application (an application for reporting and tracking on-the-job injuries) from Classic ASP to .NET.
-				</detail>
-				<detail>
-					Upgraded internal web-based employee phonebook to include relevancy sorting on partial queries.
-				</detail>
-			</details>
-		</role>
-		<role>
-			<employer>Wavecrest Computing</employer>
-			<title>Software Programmer</title>
-			<link>https://www.wavecrest.net</link>
+            <role>
+                <title>Executive Chair to Keyboard Interface Specialist</title>
+                <tenure>
+                    <start>2014-10-01</start>
+                    <end>2019-04-10</end>
+                </tenure>
+                <tags>
+                    <tag>c#</tag>
+                    <tag>sql-server</tag>
+                    <tag>php</tag>
+                    <tag>xml</tag>
+                    <tag>jquery</tag>
+                    <tag>tfs</tag>
+                    <tag>git</tag>
+                    <tag>ge-healthcare-systems</tag>
+                    <tag>epic-healthcare-systems</tag>
+                    <tag>mumps</tag>
+                </tags>
+                <description>
+                    Develop, implement, upgrade and enhance new and existing web based systems at all levels of the stack (including front-end JS/HTML/CSS, server-side .NET/PHP, and database schema and proc development) and maintain the web infrastructure for Dartmouth-Hitchcock, an academic medical center. Interact with customers to understand scope and develop requirements. Serve as a mentor and technical resource for junior engineers in understanding and problem solving.
+                </description>
+                <details>
+                    <detail>
+                        Lead engineer on Legion, a C#-based homegrown Web Services API Rapid-Development Framework, which powers the new web infrastructure at Dartmouth-Hitchcock. Created various services leveraging this framework to support the development of mission-critical applications. Also developed services to provide centralized integration for applications to third party systems and APIs including: Twilio, AtTask, CECity, and Exchange.
+                    </detail>
+                    <detail>
+                        Co-lead engineer on myD-H v3.0, a patient portal application. Version 3.0 involved redesigning the application to move away from a monolithic design style to a microservices style. Primary responsibilities included architectural design of core libraries and web services integration, as well as the design and implementation of several new supporting services such as messaging and SSO.
+                    </detail>
+                    <detail>
+                        Designed and implemented a Windows services management platform to allow rapid development, centralized management, and deployment of services across the entire web infrastructure.
+                    </detail>
+                    <detail>
+                        Designed and implemented a web application to replace paper emergency equipment inventory system which has subsequently increased Dartmouth-Hitchcock's JCAHO compliance from &lt;50% to 99.9%.
+                    </detail>
+                </details>
+            </role>
+            <role>
+                <title>Chair to Keyboard Interface Specialist</title>
+                <tenure>
+                    <start>2013-10-01</start>
+                    <end>2014-10-15</end>
+                </tenure>
+                <tags>
+                    <tag>things</tag>
+                </tags>
+                <description>
+                    Do all the things
+                </description>
+                <details>
+                </details>
+            </role>
+            <role>
+                <title>Junior Chair to Keyboard Interface Specialist</title>
+                <tenure>
+                    <start>2012-09-01</start>
+                    <end>2013-10-15</end>
+                </tenure>
+                <tags>
+                    <tag>things</tag>
+                </tags>
+                <description>
+                    Do all the things
+                </description>
+                <details>
+                </details>
+            </role>
+        </company>
+        <company>
+            <name>NOVA Robotics</name>
+            <link>https://example.com</link>
+            <icon>./icons/dartmouth-hitchcock.png</icon>
+            <role>
+                <title>Hacker in Residence</title>
+                <tenure>
+                    <start>2010-04-01</start>
+                    <end>2012-09-01</end>
+                </tenure>
+                <tags>
+                    <tag>c#</tag>
+                    <tag>jquery</tag>
+                    <tag>iis</tag>
+                    <tag>sql-server</tag>
+                    <tag>xml</tag>
+                    <tag>mumps</tag>
+                    <tag>ge-healthcare-systems</tag>
+                </tags>
+                <description>
+                    Develop, implement, upgrade and enhance new and existing web based systems at all levels of the stack (including front-end JS/HTML/CSS, server-side .NET/PHP, and database schema and proc development) and maintain the web infrastructure for Dartmouth-Hitchcock, an academic medical center.
+                </description>
+                <details>
+                    <detail>
+                        Designed and developed myD-H, an online patient portal, to support the organizational transition from GE's Patient Online to Epic's MyChart. Along with two other team members, wrote functionality to convert three disparate legacy user bases on-the-fly into a single SSO layer integrating the five new systems comprising myD-H.
+                    </detail>
+                    <detail>
+                        Designed and developed shared logging service to centrally collect events and exceptions from homegrown applications.
+                    </detail>
+                    <detail>
+                        Migrated Employee Report of Injury application (an application for reporting and tracking on-the-job injuries) from Classic ASP to .NET.
+                    </detail>
+                    <detail>
+                        Upgraded internal web-based employee phonebook to include relevancy sorting on partial queries.
+                    </detail>
+                </details>
+            </role>
+        </company>
+        <company>
+			<name>Cyberdyne Systems</name>
+			<link>https://example.com</link>
 			<icon>./icons/wavecrest.png</icon>
-			<tenure>
-				<start>2008</start>
-				<end>2009</end>
-			</tenure>
-			<tags>
-				<tag>java</tag>
-				<tag>javadb</tag>
-				<tag>javascript</tag>
-				<tag>prototype</tag>
-				<tag>linux</tag>
-				<tag>windows</tag>
-			</tags>
-			<description>
-				Responsible for developing and testing various Java applications on Linux and Windows systems for Wavecrest, a web-access security and web-usage forensic solutions provider.
-			</description>
-			<details>
-				<detail>
-					Designed caching module for Wavecrest's CyBlock Proxy product.
-				</detail>
-				<detail>
-					Designed charting frontend to display graphical histories and representations of statistical data.
-				</detail>
-			</details>
-		</role>
-		<role>
-			<employer>Florida Institute of Technology, Department of Computer Sciences</employer>
-			<title>Web Administrator</title>
-			<link>https://cs.fit.edu</link>
+            <role>
+                <title>Computer Psychiatrist</title>
+                <tenure>
+                    <start>2008</start>
+                    <end>2009</end>
+                </tenure>
+                <tags>
+                    <tag>java</tag>
+                    <tag>javadb</tag>
+                    <tag>javascript</tag>
+                    <tag>prototype</tag>
+                    <tag>linux</tag>
+                    <tag>windows</tag>
+                </tags>
+                <description>
+                    Responsible for developing and testing various Java applications on Linux and Windows systems for Wavecrest, a web-access security and web-usage forensic solutions provider.
+                </description>
+                <details>
+                    <detail>
+                        Designed caching module for Wavecrest's CyBlock Proxy product.
+                    </detail>
+                    <detail>
+                        Designed charting frontend to display graphical histories and representations of statistical data.
+                    </detail>
+                </details>
+            </role>
+        </company>
+        <company>
+			<name>ENCOM</name>
+			<link>https://www.example.com</link>
 			<icon>./icons/florida-tech.png</icon>
-			<tenure>
-				<start>2005</start>
-				<end>2009</end>
-			</tenure>
-			<tags>
-				<tag>php</tag>
-				<tag>mysql</tag>
-				<tag>javascript</tag>
-				<tag>prototype</tag>
-				<tag>apache</tag>
-				<tag>osx</tag>
-				<tag>linux</tag>
-				<tag>lamp</tag>
-			</tags>
-			<description>
-				Responsible for designing and maintaining the Computer Sciences departmental website and constructing various web applications as required by faculty and departmental needs.
-			</description>
-			<details>
-				<detail>
-					Designed a multi-department website which allows student access to and automatically assigns keys for Microsoft's MSDN Alliance software.
-				</detail>
-				<detail>
-					Developed the department's modular "Portal" site which allows students to access a customizable homepage displaying various departmental info such as faculty office hours, department news and others.
-				</detail>
-				<detail>
-					Designed generic web-based database system that allows for the dynamic creation of information gathering and maintenance applications.
-				</detail>
-			</details>
-		</role>
-	</roles>
+            <role>
+                <title>Professional Button Pusher</title>
+                <tenure>
+                    <start>2005</start>
+                    <end>2009</end>
+                </tenure>
+                <tags>
+                    <tag>php</tag>
+                    <tag>mysql</tag>
+                    <tag>javascript</tag>
+                    <tag>prototype</tag>
+                    <tag>apache</tag>
+                    <tag>osx</tag>
+                    <tag>linux</tag>
+                    <tag>lamp</tag>
+                </tags>
+                <description>
+                    Responsible for designing and maintaining the Computer Sciences departmental website and constructing various web applications as required by faculty and departmental needs.
+                </description>
+                <details>
+                    <detail>
+                        Designed a multi-department website which allows student access to and automatically assigns keys for Microsoft's MSDN Alliance software.
+                    </detail>
+                    <detail>
+                        Developed the department's modular "Portal" site which allows students to access a customizable homepage displaying various departmental info such as faculty office hours, department news and others.
+                    </detail>
+                    <detail>
+                        Designed generic web-based database system that allows for the dynamic creation of information gathering and maintenance applications.
+                    </detail>
+                </details>
+            </role>
+        </company>
+	</experience>
 	<education>
 		<degree>
 			<title>Bachelor of Science, Computer Science</title>
@@ -302,8 +342,13 @@
 	<credits>
 		<credit>
 			<title>May the source be with you</title>
-			<link>https://github.com/arychj/arychj.github.io</link>
+			<link>https://github.com/resuml/resuml.github.io</link>
 			<icon>https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png</icon>
 		</credit>
+        <credit>
+            <title>This Person Does Not Exist</title>
+            <link>https://thispersondoesnotexist.com</link>
+            <icon>./icons/snapped.png</icon>
+        </credit>
 	</credits>
 </resume>
