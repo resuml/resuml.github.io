@@ -1,0 +1,53 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500px" height="200px" version="1.1">
+	<defs/>
+	<g transform="translate(0.5,0.5)">
+		<path 
+			d="	M 100 150
+				L 10 100
+				L 100 50"
+			fill="none" 
+			stroke="#303030" 
+			stroke-width="15"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<circle
+			cx="215" 
+			cy="60" 
+			r="40" 
+			stroke="#303030" 
+			stroke-width="15" 
+		    fill="#fff" 
+		/>
+		<path
+			d=" M 290 185
+				a 55,60 0 1,0 -150,0" 
+			stroke="#303030" 
+			stroke-width="15" 
+			fill="transparent"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			/>
+		<path 
+			d="	M 325 185
+				L 375 20"
+			fill="none" 
+			stroke="#303030" 
+			stroke-width="15"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path 
+			d="	M 400 150
+				L 490 100
+				L 400 50"
+			fill="none" 
+			stroke="#303030" 
+			stroke-width="15"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>
+
