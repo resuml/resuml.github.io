@@ -35,14 +35,20 @@ function calculateTenures(){
     }
 
     let diff = end.diff(start);
-    let duration = moment.duration(diff)
-    duration = duration.add(15, 'day'); //put the duration in the middle of a month to achieve proper rounding
 
-    let s = (duration.years() > 0 ? duration.years() + ' year' + (duration.years() == 1 ? '' : 's') : '');
-    s = s + (duration.months() > 0 ? ', ' + duration.months() + ' month' + (duration.months() == 1 ? '' : 's') : '');
-    s = s.replace(/^, /g, '');
+    if(diff > 0){
+      let duration = moment.duration(diff)
+      duration = duration.add(15, 'day'); //put the duration in the middle of a month to achieve proper rounding
 
-    $(this).find('.duration').html(s);
+      let s = (duration.years() > 0 ? duration.years() + ' year' + (duration.years() == 1 ? '' : 's') : '');
+      s = s + (duration.months() > 0 ? ', ' + duration.months() + ' month' + (duration.months() == 1 ? '' : 's') : '');
+      s = s.replace(/^, /g, '');
+
+      $(this).find('.duration').html(s);
+    }
+    else{
+      $(this).find('.duration').remove();
+    }
   });
 }
 
