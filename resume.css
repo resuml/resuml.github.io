@@ -90,6 +90,12 @@ i.tiny{
 	max-height: 50px;
 }
 
+@media screen and (max-width: 900px) {
+    .icon{
+        display: none;
+    }
+}
+
 .tenure.short{
     display: inline-block;
 }
@@ -217,7 +223,7 @@ i.tiny{
     position: absolute;
     height: calc(100% - 20px);
     top: 40px;
-    left: -43px;
+    left: -25px;
     width: 2px;
     background-color: #e9e9e9;
 }
@@ -226,7 +232,7 @@ i.tiny{
     content: '';
     position: absolute;
     top: 20px;
-    left: -46px;
+    left: -28px;
     display: block;
     border: 2px solid #cfcfcf;
     border-radius: 50%;
