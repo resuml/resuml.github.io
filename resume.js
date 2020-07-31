@@ -9,21 +9,25 @@ $(document).ready(function(){
 });
 
 function calculateTenures(){
-  $('.tenure').each(function(index, value) {
+  $('.company').each(function(index, value) {
     let start = undefined;
     let end = undefined;
 
-    let dates = $(this).find('.date');
+    let dates = $(this).find('.roles .tenure .date');
     if(dates.length == 1){
       start = $(dates[0]).html();
     }
-    else if(dates.length == 2){
-      start = $(dates[0]).html();
+    else{
+      let starts = $(dates).filter('.start');
+      let ends = $(dates).filter('.end');
 
-      if($(dates[1]).html() != 'Current'){
-        end = $(dates[1]).html();
+      start = $(starts[starts.length - 1]).html();
+
+      if($(ends[0]).html() != 'Current'){
+        end = $(ends[0]).html();
       }
     }
+console.log(start + ' > ' + end);
 
     if((start && start.length == 4) || (end && end.length == 4)){
       start = moment(start, 'YYYY').startOf('year');
