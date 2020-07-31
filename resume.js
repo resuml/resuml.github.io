@@ -9,11 +9,11 @@ $(document).ready(function(){
 });
 
 function calculateTenures(){
-  $('.company').each(function(index, value) {
+  $('.company,.degree').each(function(index, value) {
     let start = undefined;
     let end = undefined;
 
-    let dates = $(this).find('.roles .tenure .date');
+    let dates = $(this).find('.tenure:not(.short) .date');
     if(dates.length == 1){
       start = $(dates[0]).html();
     }
@@ -27,7 +27,6 @@ function calculateTenures(){
         end = $(ends[0]).html();
       }
     }
-console.log(start + ' > ' + end);
 
     if((start && start.length == 4) || (end && end.length == 4)){
       start = moment(start, 'YYYY').startOf('year');
