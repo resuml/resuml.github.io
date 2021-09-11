@@ -257,6 +257,7 @@ i.tiny{
 
 #credits a, #credits a:visited{
 	color: #000000;
+    margin-right: 2vw;
 }
 
 #credits a:hover{
