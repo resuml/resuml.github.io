@@ -6,7 +6,7 @@
 		<title>Experience Presentation Engineer</title>
 		<address>Potwin, KS, United States</address>
 		<link>https://resuml.com</link>
-		<icon>./icons/resumlx.png</icon>
+		<icon>./icons/resuml.svg</icon>
 		<email>anon.nemo@example.com</email>
 		<crypto>
 			<fingerprint>1A2B 3000 132E 01D0</fingerprint>
@@ -30,7 +30,7 @@
 			<link>https://github.com/resuml/resuml.github.io</link>
 			<icon>./icons/resuml.svg</icon>
             <role>
-                <title>Sr. Principle Imagineer</title>
+                <title>Sr. Principal Imagineer</title>
                 <tenure>
                     <start>2019-04-10</start>
                 </tenure>
@@ -43,25 +43,19 @@
                     <tag>materialize</tag>
                 </tags>
                 <description>
-                    Design and develop applications in support of the Vanderbilt Institute for Clinical and Translational Research. Our goal is to transform the way ideas and research discoveries make their way from origin to patient care by simplifying process and making it easier for researchers and patients to focus on what is important.
+                    Generate pretty resumes from structured data.
                 </description>
                 <details>
                     <detail>
-                        Lead developer on TrialsToday.org, an application to facilitate the discovery of clinical trials by volunteers. Enhanced application to be multi-tenant and provide results localized to those tenants based on institutional rules.
-                    </detail>
-                    <detail>
-                        Repurposed TrialsToday.org data to build the Competing Trials Tool which allows VICTR to offer a rapid service to help investigators discover clinical trials which may be competing for volunteers in their area.
-                    </detail>
-                    <detail>
-                        Developed message queuing and logging bundle to handle templating and batch sending of emails, as well as recovery in the event of gateway failure.
+                        Developed RESUML, a simple way to maintain your resume and present it in a pretty way.
                     </detail>
                 </details>
             </role>
         </company>
         <company>
 			<name>Omni Consumer Products</name>
-			<link>https://example.com</link>
-			<icon>./icons/dartmouth-hitchcock.png</icon>
+			<link>https://en.wikipedia.org/wiki/RoboCop</link>
+			<icon>./icons/ocp.png</icon>
             <role>
                 <title>Executive Chair to Keyboard Interface Specialist</title>
                 <tenure>
@@ -69,32 +63,16 @@
                     <end>2019-04-10</end>
                 </tenure>
                 <tags>
-                    <tag>c#</tag>
-                    <tag>sql-server</tag>
-                    <tag>php</tag>
-                    <tag>xml</tag>
-                    <tag>jquery</tag>
-                    <tag>tfs</tag>
-                    <tag>git</tag>
-                    <tag>ge-healthcare-systems</tag>
-                    <tag>epic-healthcare-systems</tag>
-                    <tag>mumps</tag>
+                    <tag>robotics</tag>
+                    <tag>malfunctions</tag>
+                    <tag>profits</tag>
                 </tags>
                 <description>
-                    Develop, implement, upgrade and enhance new and existing web based systems at all levels of the stack (including front-end JS/HTML/CSS, server-side .NET/PHP, and database schema and proc development) and maintain the web infrastructure for Dartmouth-Hitchcock, an academic medical center. Interact with customers to understand scope and develop requirements. Serve as a mentor and technical resource for junior engineers in understanding and problem solving.
+                    We've Got the Future Under Control.
                 </description>
                 <details>
                     <detail>
-                        Lead engineer on Legion, a C#-based homegrown Web Services API Rapid-Development Framework, which powers the new web infrastructure at Dartmouth-Hitchcock. Created various services leveraging this framework to support the development of mission-critical applications. Also developed services to provide centralized integration for applications to third party systems and APIs including: Twilio, AtTask, CECity, and Exchange.
-                    </detail>
-                    <detail>
-                        Co-lead engineer on myD-H v3.0, a patient portal application. Version 3.0 involved redesigning the application to move away from a monolithic design style to a microservices style. Primary responsibilities included architectural design of core libraries and web services integration, as well as the design and implementation of several new supporting services such as messaging and SSO.
-                    </detail>
-                    <detail>
-                        Designed and implemented a Windows services management platform to allow rapid development, centralized management, and deployment of services across the entire web infrastructure.
-                    </detail>
-                    <detail>
-                        Designed and implemented a web application to replace paper emergency equipment inventory system which has subsequently increased Dartmouth-Hitchcock's JCAHO compliance from &lt;50% to 99.9%.
+                        Manage testing of ED-209 logic circuits.
                     </detail>
                 </details>
             </role>
@@ -105,12 +83,10 @@
                     <end>2014-10-15</end>
                 </tenure>
                 <tags>
-                    <tag>things</tag>
+                    <tag>stuff</tag>
                 </tags>
-                <description>
-                    Do all the things
-                </description>
                 <details>
+                    <detail>Resolved temporary setback during ED-209 development phase allowing development team to meet deadline and save $50 million.</detail>
                 </details>
             </role>
             <role>
@@ -122,17 +98,16 @@
                 <tags>
                     <tag>things</tag>
                 </tags>
-                <description>
-                    Do all the things
-                </description>
                 <details>
+                    <detail>Move illegaly parked cars from private property.</detail>
+                    <detail>Within 20 seconds.</detail>
                 </details>
             </role>
         </company>
         <company>
             <name>NOVA Robotics</name>
-            <link>https://example.com</link>
-            <icon>./icons/dartmouth-hitchcock.png</icon>
+            <link>https://en.wikipedia.org/wiki/Short_Circuit_(1986_film)</link>
+            <icon>./icons/nova.png</icon>
             <role>
                 <title>Hacker in Residence</title>
                 <tenure>
@@ -140,37 +115,23 @@
                     <end>2012-09-01</end>
                 </tenure>
                 <tags>
-                    <tag>c#</tag>
-                    <tag>jquery</tag>
-                    <tag>iis</tag>
-                    <tag>sql-server</tag>
-                    <tag>xml</tag>
-                    <tag>mumps</tag>
-                    <tag>ge-healthcare-systems</tag>
+                    <tag>robotics</tag>
+                    <tag>ai</tag>
+                    <tag>no-disassemble</tag>
                 </tags>
                 <description>
-                    Develop, implement, upgrade and enhance new and existing web based systems at all levels of the stack (including front-end JS/HTML/CSS, server-side .NET/PHP, and database schema and proc development) and maintain the web infrastructure for Dartmouth-Hitchcock, an academic medical center.
+                    Escaped robot fights for his life. Film at eleven.
                 </description>
                 <details>
-                    <detail>
-                        Designed and developed myD-H, an online patient portal, to support the organizational transition from GE's Patient Online to Epic's MyChart. Along with two other team members, wrote functionality to convert three disparate legacy user bases on-the-fly into a single SSO layer integrating the five new systems comprising myD-H.
-                    </detail>
-                    <detail>
-                        Designed and developed shared logging service to centrally collect events and exceptions from homegrown applications.
-                    </detail>
-                    <detail>
-                        Migrated Employee Report of Injury application (an application for reporting and tracking on-the-job injuries) from Classic ASP to .NET.
-                    </detail>
-                    <detail>
-                        Upgraded internal web-based employee phonebook to include relevancy sorting on partial queries.
-                    </detail>
+                    <detail>Directed input capture and loading for S.A.I.N.T. prototypes.</detail>
+                    <detail>Conducted research to determine whether life is a malfunction.</detail>
                 </details>
             </role>
         </company>
         <company>
 			<name>Cyberdyne Systems</name>
-			<link>https://example.com</link>
-			<icon>./icons/wavecrest.png</icon>
+			<link>https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day</link>
+			<icon>./icons/cyberdyne.png</icon>
             <role>
                 <title>Computer Psychiatrist</title>
                 <tenure>
@@ -178,30 +139,24 @@
                     <end>2009</end>
                 </tenure>
                 <tags>
-                    <tag>java</tag>
-                    <tag>javadb</tag>
-                    <tag>javascript</tag>
-                    <tag>prototype</tag>
-                    <tag>linux</tag>
-                    <tag>windows</tag>
+                    <tag>cyborgs</tag>
+                    <tag>artificial-intelligence</tag>
+                    <tag>world-domination</tag>
                 </tags>
                 <description>
-                    Responsible for developing and testing various Java applications on Linux and Windows systems for Wavecrest, a web-access security and web-usage forensic solutions provider.
+                    I need your clothes, your boots, and your motorcycle.
                 </description>
                 <details>
                     <detail>
-                        Designed caching module for Wavecrest's CyBlock Proxy product.
-                    </detail>
-                    <detail>
-                        Designed charting frontend to display graphical histories and representations of statistical data.
+                        Directed efforts implementing Asimov's Three Laws within the Skynet Defense System.
                     </detail>
                 </details>
             </role>
         </company>
         <company>
 			<name>ENCOM</name>
-			<link>https://www.example.com</link>
-			<icon>./icons/florida-tech.png</icon>
+			<link>https://en.wikipedia.org/wiki/Tron</link>
+			<icon>./icons/encom.jpg</icon>
             <role>
                 <title>Professional Button Pusher</title>
                 <tenure>
@@ -209,134 +164,57 @@
                     <end>2009</end>
                 </tenure>
                 <tags>
-                    <tag>php</tag>
-                    <tag>mysql</tag>
-                    <tag>javascript</tag>
-                    <tag>prototype</tag>
-                    <tag>apache</tag>
-                    <tag>osx</tag>
-                    <tag>linux</tag>
-                    <tag>lamp</tag>
+                    <tag>virtual-reality</tag>
+                    <tag>artificial-intelligence</tag>
+                    <tag>motorcycles</tag>
                 </tags>
                 <description>
-                    Responsible for designing and maintaining the Computer Sciences departmental website and constructing various web applications as required by faculty and departmental needs.
+                    A digital frontier to reshape the human condition.
                 </description>
-                <details>
-                    <detail>
-                        Designed a multi-department website which allows student access to and automatically assigns keys for Microsoft's MSDN Alliance software.
-                    </detail>
-                    <detail>
-                        Developed the department's modular "Portal" site which allows students to access a customizable homepage displaying various departmental info such as faculty office hours, department news and others.
-                    </detail>
-                    <detail>
-                        Designed generic web-based database system that allows for the dynamic creation of information gathering and maintenance applications.
-                    </detail>
-                </details>
             </role>
         </company>
 	</experience>
 	<education>
 		<degree>
-			<title>Bachelor of Science, Computer Science</title>
-			<institution>Florida Institute of Technology</institution>
+			<title>Bachelor of Science, World Domination</title>
+			<institution>University of Education</institution>
 			<tenure>
 				<start>2005</start>
 				<end>2009</end>
 			</tenure>
-			<link>https://www.fit.edu</link>
-			<icon>./icons/florida-tech.png</icon>
+			<link>https://www.example.com</link>
+			<icon>https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Education_-_Grad_Hat.svg/240px-Education_-_Grad_Hat.svg.png</icon>
 			<tags>
-				<tag>malicious-mobile-code</tag>
-				<tag>cryptography</tag>
-				<tag>database-design</tag>
+				<tag>intro-to-freeze-rays</tag>
+				<tag>advanced-laughing</tag>
+                <tag>revealing-the-scheme-too-early</tag>
 			</tags>
 			<description>
-				Winner of the 2009 Northrop Grumman Student Design Showcase at Florida Tech - Computer Science for the mEYEtrak project, a mobile device based social networking application (http://meyetrak.com).
+                President of the Junior League of Evil club.
 			</description>
 		</degree>
 	</education>
 	<projects>
 		<project>
-			<name>Trials Today</name>
-			<date>2017-08-08</date>
-			<link>https://www.trialstoday.org</link>
+			<name>Bombe</name>
+			<date>1940-03</date>
+			<link>https://en.wikipedia.org/wiki/Bombe</link>
 			<tags>
-				<tag>php</tag>
-				<tag>symfony</tag>
-				<tag>elasticsearch</tag>
+                <tag>cryptanalysis</tag>
+				<tag>electro-mechanics</tag>
 			</tags>
 			<description>
-				Thousands of organizations across the country are looking for people like you to take part in research studies. Whether you are looking for treatment, or want to help out with research that will improve treatment, diagnosis, and prevention, there are studies that need you!
+                An electro-mechanical device designed to aid British crypologists in breaking the German Enigma-code during World War II.
 			</description>
-			<contribution>
-				We made a quick way to search the thousands of studies available on ClinicalTrials.gov. By answering a few short questions, we can help you find a list of studies that may interest you.
-			</contribution>
-		</project>
-		<project>
-			<name>Legion Web Services Framework</name>
-			<date>2012-01-01</date>
-			<link>https://erikjolson.com/legion-web-services-framework/</link>
-			<icon>https://github.com/Dartmouth-Hitchcock/Legion/blob/master/Legion%20of%20OS/Sites/Centurion/Images/legion.png?raw=true</icon>
-			<tags>
-				<tag>.net</tag>
-				<tag>sql-server</tag>
-			</tags>
-			<description>
-				Legion is a cloud-base framework to allow the rapid development of distinct and compartmentalized web services by abstracting everything to do with the "web" part of web services into the framework, leaving the developer free to focus on actual functionality.
-			</description>
-		</project>
-		<project>
-			<name>myD-H | Dartmouth-Hitchcock Electronic Health Record</name>
-			<date>2011-04-02</date>
-			<link>https://www.mydh.org</link>
-			<icon>./icons/mydh.png</icon>
-			<tags>
-				<tag>c#</tag>
-				<tag>sql-server</tag>
-				<tag>javascript</tag>
-				<tag>jquery</tag>
-				<tag>asp</tag>
-				<tag>asp.net</tag>
-				<tag>xml</tag>
-				<tag>mumps</tag>
-			</tags>
-			<description>
-				You can use myD-H to communicate securely with your health care providers, request or change appointments, request prescription renewals, view your account and make payments…
-			</description>
-			<contribution>
-				Designed and implemented patient front-end including integration with Epic MyChart's front-end. Designed and implemented component to convert users on-demand from legacy patient portal system. Developed single-sign-on layer to integrate the multiple disparate systems that now comprise myD-H.
-			</contribution>
-		</project>
-		<project>
-			<name>mEYEtrak</name>
-			<date>2009-04-27</date>
-			<link>http://meyetrak.com</link>
-			<icon>./icons/meyetrak.png</icon>
-			<tags>
-				<tag>php</tag>
-				<tag>mysql</tag>
-				<tag>apache</tag>
-				<tag>c#</tag>
-				<tag>windows-mobile</tag>
-				<tag>xml</tag>
-				<tag>javascript</tag>
-				<tag>prototype</tag>
-			</tags>
-			<description>
-				How many times have you run into a friend and through conversation realized that you had been in the same place at the same time, but managed to not cross paths? It's happened to us more than once. Imagine being able to receive alerts on your mobile phone when friends are in the area, being able to send or request an exact location to meet, and being able to hook up with an old buddy without the headache of planning. This technology would enable you to stay in touch with more people in the most convenient way possible.
-			</description>
-			<contribution>
-				Designed and implemented server side architecture and communications protocols.
-			</contribution>
 		</project>
 	</projects>
 	<publications>
 		<publication>
-			<title>Connecting the public with clinical trial options: The ResearchMatch Trials Today tool</title>
-			<publisher>Journal of Clinical and Translational Science</publisher>
-			<link>https://doi.org/10.1017/cts.2018.327</link>
-			<available>2018-11-25</available>
-			<description>Potential participants seek information about clinical trials for many reasons, but the process can be challenging. We analyzed 101,249 searches in ResearchMatch Trials Today, a free interface to recruiting trials from ClinicalTrials.gov. Searches from March 2015 to November 2016 included a broad range of conditions and healthy volunteer concepts, including 12,649 unique topics. Trials Today data indicate that it is being used to identify trials on a variety of topics.</description>
+			<title>A Mathematical Theory of Communication</title>
+			<publisher>The Bell System Technical Journal</publisher>
+			<link>https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf</link>
+			<available>1948-07</available>
+			<description>The fundamental problem of communication is that of reproducing at one point either exactly or approximately a message selected at another point. Frequently the messages have meaning; that is they refer to or are correlated according to some system with certain physical or conceptual entities. These semantic aspects of communication are irrelevant to the engineering problem. The significant aspect is that the actual message is one selected from a set of possible messages. The system must be designed to operate for each possible selection, not just the one which will actually be chosen since this is unknown at the time of design.</description>
 		</publication>
 	</publications>
 	<credits>
@@ -348,7 +226,7 @@
         <credit>
             <title>This Person Does Not Exist</title>
             <link>https://thispersondoesnotexist.com</link>
-            <icon>./icons/snapped.png</icon>
+            <icon>./icons/i.png</icon>
         </credit>
 	</credits>
 </resume>
