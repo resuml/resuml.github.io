@@ -18,7 +18,7 @@
 			r="40" 
 			stroke="#303030" 
 			stroke-width="15" 
-		    fill="#fff" 
+		    fill="none" 
 		/>
 		<path
 			d=" M 290 185
