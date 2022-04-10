@@ -9,7 +9,7 @@
 		<email>anon.nemo@example.com</email>
         <links>
             <link href="https://resuml.com"/>
-            <link type="another-link" icon="lens_blur" href="https://example.com">Aliens</link>
+            <link type="another-link" print="false" icon="lens_blur" href="https://example.com">Aliens</link>
         </links>
 		<gpg>
 			<fingerprint>1A2B 3000 132E 01D0</fingerprint>

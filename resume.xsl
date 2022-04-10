@@ -311,8 +311,14 @@
             <xsl:otherwise><xsl:value-of select="@href"/></xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
+        <xsl:variable name="print">
+          <xsl:choose>
+            <xsl:when test="not((@print)) or (@print = 'true')"></xsl:when>
+            <xsl:otherwise>no-print</xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
 
-        <p class="{$type}">
+        <p class="{$type} {$print}">
           <a href="{@href}" target="_blank">
             <i class="tiny material-icons"><xsl:value-of select="$icon"/></i>
             <xsl:value-of select="$title"/>
