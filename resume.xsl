@@ -292,9 +292,33 @@
         <p class="phone"><i class="tiny material-icons">local_phone</i> <xsl:value-of select="phone"/></p>
       </xsl:if>
 
-      <xsl:if test="link">
-        <p class="homepage"><a href="{link}" target="_blank"><i class="tiny material-icons">insert_link</i> <xsl:value-of select="link"/></a></p>
-      </xsl:if>
+      <xsl:for-each select=".//links/link">
+        <xsl:variable name="type">
+          <xsl:choose>
+            <xsl:when test="count(@type) > 0"><xsl:value-of select="@type"/></xsl:when>
+            <xsl:otherwise>link</xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="icon">
+          <xsl:choose>
+            <xsl:when test="count(@icon) > 0"><xsl:value-of select="@icon"/></xsl:when>
+            <xsl:otherwise>insert_link</xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <xsl:variable name="title">
+          <xsl:choose>
+            <xsl:when test="string-length(.) > 0"><xsl:value-of select="."/></xsl:when>
+            <xsl:otherwise><xsl:value-of select="@href"/></xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+
+        <p class="{$type}">
+          <a href="{@href}" target="_blank">
+            <i class="tiny material-icons"><xsl:value-of select="$icon"/></i>
+            <xsl:value-of select="$title"/>
+          </a>
+        </p>
+      </xsl:for-each>
 
       <xsl:if test="email">
         <p class="email">
