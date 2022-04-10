@@ -292,6 +292,20 @@
         <p class="phone"><i class="tiny material-icons">local_phone</i> <xsl:value-of select="phone"/></p>
       </xsl:if>
 
+      <xsl:if test="email">
+        <p class="email">
+          <a href="mailto:{email}">
+            <i class="tiny material-icons">mail_outline</i>
+            <xsl:value-of select="email"/>
+          </a>
+          <xsl:if test="gpg">
+            <a class="public-key" href="{gpg/key}" target="_blank">
+              <xsl:value-of select="gpg/fingerprint"/>
+            </a>
+          </xsl:if>
+        </p>
+      </xsl:if>
+
       <xsl:for-each select=".//links/link">
         <xsl:variable name="type">
           <xsl:choose>
@@ -325,20 +339,6 @@
           </a>
         </p>
       </xsl:for-each>
-
-      <xsl:if test="email">
-        <p class="email">
-          <a href="mailto:{email}">
-            <i class="tiny material-icons">mail_outline</i>
-            <xsl:value-of select="email"/>
-          </a>
-          <xsl:if test="gpg">
-            <a class="public-key" href="{gpg/key}" target="_blank">
-              <xsl:value-of select="gpg/fingerprint"/>
-            </a>
-          </xsl:if>
-        </p>
-      </xsl:if>
     </div>
   </xsl:template>
 </xsl:stylesheet>
