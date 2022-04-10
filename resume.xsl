@@ -326,9 +326,9 @@
             <i class="tiny material-icons">mail_outline</i>
             <xsl:value-of select="email"/>
           </a>
-          <xsl:if test="crypto">
-            <a class="public-key" href="{crypto/key}" target="_blank">
-              <xsl:value-of select="crypto/fingerprint"/>
+          <xsl:if test="gpg">
+            <a class="public-key" href="{gpg/key}" target="_blank">
+              <xsl:value-of select="gpg/fingerprint"/>
             </a>
           </xsl:if>
         </p>

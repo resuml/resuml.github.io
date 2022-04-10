@@ -11,10 +11,10 @@
             <link href="https://resuml.com"/>
             <link type="another-link" icon="lens_blur" href="https://example.com">Aliens</link>
         </links>
-		<crypto>
+		<gpg>
 			<fingerprint>1A2B 3000 132E 01D0</fingerprint>
 			<key>https://en.wikipedia.org/wiki/GNU_Privacy_Guard</key>
-		</crypto>
+		</gpg>
 		<picture>https://thispersondoesnotexist.com/image</picture>
 	</demographics>
 	<keywords>
